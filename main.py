@@ -1,6 +1,5 @@
 import streamlit as st
 import openai
-import json
 #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
 openai.api_key = "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"
 def run_conversation(city, country, time):
