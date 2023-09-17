@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
-#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
-openai.api_key = "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"
+
+openai.api_key = openai_key
 def run_conversation(city, country, time):
     # Step 1: send the conversation and available functions to GPT
     message_string = "Hello GPT! I'm going to %s, %s for %s day(s). Can you provide me a detailed travel plan day by day? Thank you!" % (city, country, time)
