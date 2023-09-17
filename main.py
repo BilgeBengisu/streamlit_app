@@ -2,7 +2,7 @@ import streamlit as st
 import geonamescache
 import openai
 
-openai.api_key = "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"
+openai.api_key = ""
 
 
 def run_conversation(city, country, time):
