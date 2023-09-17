@@ -24,7 +24,7 @@ city = st.text_input('Which city are you going to?')
 time = st.text_input("How long will you be there?")
 travel_button = st.button("Let's Travel!")
 if travel_button:
-    st.write('Your travel to ', city, ", ", country, " for ", time, " day(s)", model=True)
+    st.write('Your travel to ', city, ", ", country, " for ", time, " day(s)")
     st.write(run_conversation(city, country, time))
 
 
