@@ -20,6 +20,7 @@ def run_conversation(city, country, time):
 
 def main():
     st.set_page_config(page_title="Let's Travel!", page_icon="caravan-cartoon-icon-style-clipart.jpg")
+    image = Image.open('caravan-cartoon-icon-style-clipart.jpg')
     st.header('Welcome to the :blue[Travel Planner]', divider='rainbow')
 
     gc = geonamescache.GeonamesCache()
