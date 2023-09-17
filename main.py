@@ -33,7 +33,7 @@ def main():
     cities = gc.search_cities(country_iso, attribute='countrycode')
     city = st.selectbox('Which city are you going to?',
                         map(lambda city: city['name'], cities))
-    city_details = gc.search_cities(city, 'name')[0]
+    city_details = gc.search_cities(city, contains_search=False)[0]
 
     time = st.text_input("How many days will you be staying?")
 
