@@ -37,7 +37,7 @@ cities = gc.search_cities(gc.get_countries_by_names()[
 city = st.selectbox('Which city are you going to?',
                     map(lambda city: city['name'], cities))
 
-time = st.text_input("How long will you be there in days?")
+time = st.text_input("How many days will you be staying?")
 travel_button = st.button("Let's Travel!")
 if travel_button:
     st.write('Your travel to ', city, ", ", country, " for ", time, " day(s)")
